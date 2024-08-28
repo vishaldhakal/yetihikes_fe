@@ -50,7 +50,7 @@ function UnLockSection() {
               <Link
                 href="#contact"
                 title=""
-                class="flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-700 hover:bg-blue-600 focus:bg-blue-600"
+                class="flex items-center justify-center px-10 py-4 text-base font-semibold text-black transition-all duration-200 bg-secondary"
                 role="button"
               >
                 View Packages

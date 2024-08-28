@@ -11,18 +11,18 @@ function HeroSection(props) {
               <div>
                 <div class="relative inline-flex">
                   <span class="absolute inset-x-0 bottom-0 border-b-[5px] border-secondary shadow w-1/2 mx-auto md:w-full"></span>
-                  <h1 className="relative text-4xl font-extrabold text-black sm:text-6xl lg:text-4xl mt-2 text-center md:text-start">
-                    Experience the Difference!
+                  <h1 className="relative text-xl font-extrabold text-black sm:text-2xl lg:text-2xl mt-2 text-center md:text-start">
+                    Yetihikes - Discover Nepal's Majestic Wonders
                   </h1>
                 </div>
 
-                <p class="mt-2 mb-6 text-base text-black text-center md:text-start leading-8">
-                  <span className="font-bold">Yetihikes</span> is a leading
-                  online trekking company that offers a wide range of trekking
-                  and tour packages in Nepal. We are a team of experienced and
-                  professional trekking guides who have been working in the
-                  tourism industry for more than 10 years.
-                </p>
+                <h2 class="mt-2 mb-6 text-base text-black text-center md:text-start leading-8">
+                  Yetihikes is a leading online trekking company that offers a
+                  wide range of trekking and tour packages in Nepal. We are a
+                  team of experienced and professional trekking guides with whom
+                  you can embark on unforgettable journeys through the Himalayas
+                  with expert local guides
+                </h2>
 
                 <FeatureList />
 

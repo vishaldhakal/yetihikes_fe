@@ -28,11 +28,9 @@ function WhyUs() {
                       7 Years+ Experience
                     </h3>
                     <p class="mt-3 font-sans text-md leading-7 font-normal text-opacity-50 text-black">
-                      Yeti Hikes is a leading online trekking company that
-                      offers a wide range of trekking and tour packages in
-                      Nepal. We are a team of experienced and professional
-                      trekking guides who have been working in the tourism
-                      industry for more than 7 years.
+                      Yeti Hikes Established in 2017, we bring extensive
+                      knowledge of Nepal's terrain and culture to every
+                      adventure.
                     </p>
                   </div>
                 </div>
@@ -59,9 +57,7 @@ function WhyUs() {
                       We offer some of the most competitive rates in the
                       industry, providing you with exceptional value. Our
                       transparent pricing model ensures that you receive clear
-                      and straightforward service, with no hidden fees or
-                      reserve holdbacks. We are committed to delivering the best
-                      rates, guaranteed.
+                      and straightforward service, with no hidden fees.
                     </p>
                   </div>
                 </div>

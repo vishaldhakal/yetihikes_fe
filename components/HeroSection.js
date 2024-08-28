@@ -4,43 +4,25 @@ import FeatureList from "./FeatureList";
 function HeroSection(props) {
   return (
     <>
-      <div class="bg-gradient-to-b from-blue-100 to-blue-0">
-        <section class="py-10 sm:py-16 lg:pt-12 lg:pb-24">
+      <div class="bg-gradient-to-b from-blue-100 to-blue-0 bgg">
+        <section class="py-10 sm:py-10 lg:pt-12 lg:pb-10">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
               <div>
-                {props.city && (
-                  <h1 className="text-4xl font-black text-black sm:text-6xl lg:text-4xl mt-2 lg:leading-[2.7rem]">
-                    Commission Advance Services in {props.city} by iCommission.
+                <div class="relative inline-flex">
+                  <span class="absolute inset-x-0 bottom-0 border-b-[5px] border-secondary shadow w-1/2 mx-auto md:w-full"></span>
+                  <h1 className="relative text-4xl font-extrabold text-black sm:text-6xl lg:text-4xl mt-2 text-center md:text-start">
+                    Experience the Difference!
                   </h1>
-                )}
-                {!props.city && (
-                  <div class="relative inline-flex">
-                    <span class="absolute inset-x-0 bottom-0 border-b-[5px] border-[#ffee01] shadow w-1/2 mx-auto md:w-full"></span>
-                    <h1 className="relative text-4xl font-extrabold text-black sm:text-6xl lg:text-4xl mt-2 text-center md:text-start">
-                      Time is money. Get paid today.
-                    </h1>
-                  </div>
-                )}
+                </div>
 
-                {!props.city && (
-                  <p class="mt-4 mb-6 text-base text-black text-center md:text-start">
-                    <span className="font-bold">iCommission</span> offers
-                    Realtors commission advances to cover expenses and fuel
-                    business growth. Boost your real estate revenue with
-                    predictable, controllable, and scalable funding.
-                  </p>
-                )}
-
-                {props.city && (
-                  <p class="mt-2 mb-6 text-base text-black text-center md:text-start">
-                    <span className="font-bold">iCommission</span> offers
-                    Realtors commission advances in {props.city} to cover
-                    expenses and fuel business growth. Boost your real estate
-                    revenue with predictable, controllable, and scalable
-                    funding.
-                  </p>
-                )}
+                <p class="mt-2 mb-6 text-base text-black text-center md:text-start leading-8">
+                  <span className="font-bold">Yetihikes</span> is a leading
+                  online trekking company that offers a wide range of trekking
+                  and tour packages in Nepal. We are a team of experienced and
+                  professional trekking guides who have been working in the
+                  tourism industry for more than 10 years.
+                </p>
 
                 <FeatureList />
 
@@ -70,10 +52,10 @@ function HeroSection(props) {
                   <Link
                     href="#contact"
                     title=""
-                    class="flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-700 hover:bg-blue-600 focus:bg-blue-600"
+                    class="flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary hover:shadow-2xl"
                     role="button"
                   >
-                    Apply Now {props.city && "in " + props.city}
+                    Book Now {props.city && "in " + props.city}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -89,12 +71,12 @@ function HeroSection(props) {
                     </svg>
                   </Link>
                   <Link
-                    href="/how-it-works"
+                    href="/"
                     title=""
-                    class="flex items-center justify-center px-10 py-4 text-base font-semibold bg-white transition-all duration-200 text-blue-700 hover:text-blue-600 focus:bg-blue-600"
+                    class="flex items-center justify-center px-10 py-4 text-base font-semibold  transition-all duration-200 bg-secondary hover:shadow-2xl"
                     role="button"
                   >
-                    How it Works
+                    View Packages
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -113,7 +95,9 @@ function HeroSection(props) {
               </div>
 
               <div className="hidden lg:block">
-                <img class="w-full" src="/heroimg.png" alt="" />
+                <div className="flex">
+                  <img class="w-full h-full" src="/hero.png" alt="hero image" />
+                </div>
               </div>
             </div>
           </div>

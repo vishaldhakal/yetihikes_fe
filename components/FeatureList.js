@@ -12,10 +12,10 @@ const FeatureItem = ({ icon: Icon, title }) => (
 
 const FeatureList = () => {
   const features = [
-    { icon: Zap, title: "Instant payout" },
+    { icon: Zap, title: "7 Years+ Experience" },
     { icon: Award, title: "Best rates guaranteed" },
     { icon: Users, title: "Value-added business support" },
-    { icon: Cpu, title: "Tech-driven operation" },
+    { icon: Cpu, title: "Experience Driven operation" },
   ];
 
   return (

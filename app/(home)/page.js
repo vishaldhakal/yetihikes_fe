@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="my-20 md:my-40">
+      {/* <div className="my-20 md:my-40">
         <VideoEmbed url="https://www.youtube.com/embed/7YtyOyJywac?si=0fwO8HP1U_z_OqW5" />
-      </div>
+      </div> */}
       <UnLockSection />
       <WhyUs />
       <GetStarted />

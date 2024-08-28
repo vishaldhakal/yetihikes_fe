@@ -25,13 +25,14 @@ function WhyUs() {
                 <div class="py-8 pl-8 pr-12 lg:px-12 bg-white shadow-2xl rounded-md">
                   <div class="max-w-md">
                     <h3 class="font-sans text-xl font-bold sm:text-3xl lg:text-2xl text-black">
-                      Instant Payout
+                      7 Years+ Experience
                     </h3>
                     <p class="mt-3 font-sans text-md leading-7 font-normal text-opacity-50 text-black">
-                      Say goodbye to lengthy payment delays. With iCommission,
-                      you can receive your commission instantly, enabling you to
-                      reinvest in your business and enjoy the financial freedom
-                      you deserve.
+                      Yeti Hikes is a leading online trekking company that
+                      offers a wide range of trekking and tour packages in
+                      Nepal. We are a team of experienced and professional
+                      trekking guides who have been working in the tourism
+                      industry for more than 7 years.
                     </p>
                   </div>
                 </div>
@@ -84,13 +85,10 @@ function WhyUs() {
                       Value-Added Business Support
                     </h3>
                     <p class="mt-3 font-sans text-md leading-7 font-normal text-opacity-50 text-black">
-                      iCommission was established by Realtors, for Realtors,
-                      with a deep understanding of the industry and the keys to
-                      success. We provide comprehensive resources, insights, and
-                      opportunities across all aspects of your business -
-                      marketing, sales, relationship building, and referral
-                      networking - so you can fully leverage our suite of
-                      services to elevate your career.
+                      At Yeti Hikes, we understand the importance of providing
+                      value-added support to our clients. Our dedicated team of
+                      professionals is committed to helping you achieve your
+                      hives.
                     </p>
                   </div>
                 </div>
@@ -109,14 +107,12 @@ function WhyUs() {
                 <div class="py-8 pl-8 pr-12 lg:px-12">
                   <div class="max-w-md">
                     <h3 class="font-sans text-xl font-bold sm:text-3xl lg:text-2xl text-black">
-                      Tech-Driven Operations
+                      Experience Driven operation
                     </h3>
                     <p class="mt-3 font-sans text-md leading-7 font-normal text-opacity-50 text-black">
-                      Our streamlined process is designed with your convenience
-                      in mind. Apply online, receive approval within minutes,
-                      and access your funds in as little as one hour - no
-                      delays, no hassle. We handle the details so you can focus
-                      on what you do best.
+                      Our experienced team is dedicated to providing you with
+                      the best possible service and ensuring that your trekking
+                      experience is safe, enjoyable, and memorable.
                     </p>
                   </div>
                 </div>

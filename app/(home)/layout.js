@@ -3,9 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "iCommission | Best Commission Advance Company For Realtors",
+  title: "Yetihikes | Best Travel Agency in Nepal",
   description:
-    "Are you tired of waiting for your commission payouts? iCommission provides reliable & fast commission advance services to real estate agents & brokers.",
+    "Yetihikes is the best travel agency in Nepal that provides the best trekking, tour, and adventure packages in Nepal.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import {
@@ -6,11 +7,9 @@ import {
   ChevronUp,
   Menu,
   X,
-  Linkedin,
+  Facebook,
   Instagram,
   Twitter,
-  Facebook,
-  Youtube,
 } from "lucide-react";
 
 function Navbar() {
@@ -28,12 +27,16 @@ function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-[99999] transition-all duration-300 bg-gradient-to-b to-blue-50 from-blue-100 group/nav focus-within:bg-white focus-within:shadow-md">
+    <header className="sticky top-0 z-[99999] transition-all duration-300 bg-white group/nav focus-within:bg-white focus-within:shadow-md">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex" onClick={closeMenu}>
-              <img className="w-24 h-auto" src="/logo.png" alt="iCommission" />
+              <img
+                className="w-[200px] h-auto"
+                src="/logo.svg"
+                alt="Nepal Trek"
+              />
             </Link>
           </div>
 
@@ -41,161 +44,155 @@ function Navbar() {
             <nav className="flex items-center space-x-8">
               <Link
                 href="/"
-                className="text-base font-semibold text-black hover:text-blue-600 transition-colors duration-300"
+                className="text-base font-semibold text-black hover:text-green-600 transition-colors duration-300"
               >
                 Home
               </Link>
 
               <div className="relative group">
                 <Link
-                  href="/how-it-works"
-                  className="flex items-center text-base font-semibold text-black hover:text-blue-600 cursor-pointer transition-colors duration-300"
+                  href="/"
+                  className="flex items-center text-base font-semibold text-black hover:text-green-600 cursor-pointer transition-colors duration-300"
                 >
-                  How it Works
+                  Nepal
                   <ChevronDown className="ml-1 w-4 h-4" />
                 </Link>
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                  <Link
-                    href="/how-it-works#overview"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    Overview
-                  </Link>
-                  <Link
-                    href="/how-it-works#advance-types"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    Advance Types
-                  </Link>
-                  <Link
-                    href="/how-it-works#cost-calculator"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    Cost Calculator
-                  </Link>
-                  <Link
-                    href="/how-it-works#application-process"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    Application Process
-                  </Link>
-                  <Link
-                    href="/how-it-works#faq"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    FAQ
-                  </Link>
-                </div>
-              </div>
-
-              <div className="relative group">
-                <Link
-                  href="/company"
-                  className="flex items-center text-base font-semibold text-black hover:text-blue-600 cursor-pointer transition-colors duration-300"
-                >
-                  Company
-                  <ChevronDown className="ml-1 w-4 h-4" />
-                </Link>
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                  <Link
-                    href="/company#about"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/company#reviews"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                  >
-                    Reviews
-                  </Link>
-                  <div className="relative group/social">
-                    <span className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer">
-                      Follow Us
-                      <ChevronDown className="ml-1 w-4 h-4" />
+                  <div className="py-1">
+                    <span className="block px-4 py-2 text-sm font-semibold text-gray-700">
+                      Travel Categories
                     </span>
-                    <div className="absolute left-full top-0 mt-0 w-48 rounded-md shadow-lg bg-white opacity-0 invisible group-hover/social:opacity-100 group-hover/social:visible transition-all duration-300">
-                      <Link
-                        href="https://www.linkedin.com/company/icommission/?viewAsMember=true"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                      >
-                        <Linkedin className="w-4 h-4 mr-2" /> LinkedIn
-                      </Link>
-                      <Link
-                        href="https://www.instagram.com/icommission_/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                      >
-                        <Instagram className="w-4 h-4 mr-2" /> Instagram
-                      </Link>
-                      <Link
-                        href="https://x.com/iCommission_"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                      >
-                        <Twitter className="w-4 h-4 mr-2" /> X
-                      </Link>
-                      <Link
-                        href="https://www.facebook.com/profile.php?id=61563112392385"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                      >
-                        <Facebook className="w-4 h-4 mr-2" /> Facebook
-                      </Link>
-                      <Link
-                        href="https://www.youtube.com/channel/UC3NQSXJzHVqSXuSo3lH9idQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                      >
-                        <Youtube className="w-4 h-4 mr-2" /> YouTube
-                      </Link>
-                    </div>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Trekking
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Climbing
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Tours
+                    </Link>
+                  </div>
+                  <div className="py-1 border-t border-gray-200">
+                    <span className="block px-4 py-2 text-sm font-semibold text-gray-700">
+                      Packages
+                    </span>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Everest Base Camp
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Annapurna Circuit
+                    </Link>
+                    <Link
+                      href="/"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Langtang Valley
+                    </Link>
                   </div>
                 </div>
               </div>
 
               <div className="relative group">
                 <Link
-                  href="/resources"
-                  className="flex items-center text-base font-semibold text-black hover:text-blue-600 cursor-pointer transition-colors duration-300"
+                  href="/"
+                  className="flex items-center text-base font-semibold text-black hover:text-green-600 cursor-pointer transition-colors duration-300"
                 >
-                  Resources
+                  Trekking Regions
                   <ChevronDown className="ml-1 w-4 h-4" />
                 </Link>
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <Link
-                    href="/resources#blog"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Blog
+                    Manaslu Region
                   </Link>
                   <Link
-                    href="/resources#partner"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Partner with iCommission
+                    Everest Region
                   </Link>
                   <Link
-                    href="/resources#free-download"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Free Download
+                    Annapurna Region
+                  </Link>
+                  <Link
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Langtang Region
                   </Link>
                 </div>
               </div>
+
+              <div className="relative group">
+                <Link
+                  href="/"
+                  className="flex items-center text-base font-semibold text-black hover:text-green-600 cursor-pointer transition-colors duration-300"
+                >
+                  About
+                  <ChevronDown className="ml-1 w-4 h-4" />
+                </Link>
+                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <Link
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Our Company
+                  </Link>
+                  <Link
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Our Team
+                  </Link>
+                  <Link
+                    href="/"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Testimonials
+                  </Link>
+                </div>
+              </div>
+
+              <Link
+                href="/"
+                className="text-base font-semibold text-black hover:text-green-600 transition-colors duration-300"
+              >
+                Blog
+              </Link>
+
+              <Link
+                href="/"
+                className="text-base font-semibold text-black hover:text-green-600 transition-colors duration-300"
+              >
+                Contact
+              </Link>
             </nav>
 
             <Link
-              href="#contact"
-              className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-300"
+              href="/"
+              className="inline-flex items-center justify-center px-4 py-2 text-base font-semibold text-white bg-green-600 rounded-md hover:bg-green-700 transition-colors duration-300"
             >
-              Apply Now
+              Book Now
             </Link>
           </div>
 
@@ -222,7 +219,7 @@ function Navbar() {
           isMenuOpen ? "block" : "hidden"
         } transition-all duration-300 ease-in-out bg-white`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-3 sm:px-3">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href="/"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
@@ -234,51 +231,64 @@ function Navbar() {
           <div className="relative">
             <button
               className="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              onClick={() => toggleSubmenu("howItWorks")}
+              onClick={() => toggleSubmenu("nepal")}
             >
-              How it Works
-              {openSubmenu === "howItWorks" ? (
+              Nepal
+              {openSubmenu === "nepal" ? (
                 <ChevronUp className="ml-1 w-4 h-4" />
               ) : (
                 <ChevronDown className="ml-1 w-4 h-4" />
               )}
             </button>
-            {openSubmenu === "howItWorks" && (
+            {openSubmenu === "nepal" && (
               <div className="pl-4 mt-2 space-y-2">
+                <span className="block px-3 py-2 text-sm font-semibold text-gray-700">
+                  Travel Categories
+                </span>
                 <Link
-                  href="/how-it-works#overview"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Overview
+                  Trekking
                 </Link>
                 <Link
-                  href="/how-it-works#advance-types"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Advance Types
+                  Climbing
                 </Link>
                 <Link
-                  href="/how-it-works#cost-calculator"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Cost Calculator
+                  Tours
+                </Link>
+                <span className="block px-3 py-2 text-sm font-semibold text-gray-700">
+                  Packages
+                </span>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Everest Base Camp
                 </Link>
                 <Link
-                  href="/how-it-works#application-process"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Application Process
+                  Annapurna Circuit
                 </Link>
                 <Link
-                  href="/how-it-works#faq"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  FAQ
+                  Langtang Valley
                 </Link>
               </div>
             )}
@@ -287,30 +297,44 @@ function Navbar() {
           <div className="relative">
             <button
               className="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              onClick={() => toggleSubmenu("company")}
+              onClick={() => toggleSubmenu("trekking-regions")}
             >
-              Company
-              {openSubmenu === "company" ? (
+              Trekking Regions
+              {openSubmenu === "trekking-regions" ? (
                 <ChevronUp className="ml-1 w-4 h-4" />
               ) : (
                 <ChevronDown className="ml-1 w-4 h-4" />
               )}
             </button>
-            {openSubmenu === "company" && (
+            {openSubmenu === "trekking-regions" && (
               <div className="pl-4 mt-2 space-y-2">
                 <Link
-                  href="/company#about"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  About
+                  Manaslu Region
                 </Link>
                 <Link
-                  href="/company#reviews"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Reviews
+                  Everest Region
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Annapurna Region
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Langtang Region
                 </Link>
               </div>
             )}
@@ -319,41 +343,56 @@ function Navbar() {
           <div className="relative">
             <button
               className="flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              onClick={() => toggleSubmenu("resources")}
+              onClick={() => toggleSubmenu("about")}
             >
-              Resources
-              {openSubmenu === "resources" ? (
+              About
+              {openSubmenu === "about" ? (
                 <ChevronUp className="ml-1 w-4 h-4" />
               ) : (
                 <ChevronDown className="ml-1 w-4 h-4" />
               )}
             </button>
-            {openSubmenu === "resources" && (
+            {openSubmenu === "about" && (
               <div className="pl-4 mt-2 space-y-2">
                 <Link
-                  href="/resources#blog"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Blog
+                  Our Company
                 </Link>
                 <Link
-                  href="/resources#partner"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Partner with iCommission
+                  Our Team
                 </Link>
                 <Link
-                  href="/resources#free-download"
+                  href="/"
                   className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Free Download
+                  Testimonials
                 </Link>
               </div>
             )}
           </div>
+          <Link
+            href="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            onClick={closeMenu}
+          >
+            Blog
+          </Link>
+
+          <Link
+            href="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            onClick={closeMenu}
+          >
+            Contact
+          </Link>
 
           <div className="px-3 py-2">
             <span className="block text-base font-medium text-gray-700">
@@ -361,15 +400,15 @@ function Navbar() {
             </span>
             <div className="flex space-x-4 mt-2">
               <Link
-                href="https://www.linkedin.com/company/icommission/?viewAsMember=true"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-blue-600"
               >
-                <Linkedin className="w-4 h-4" />
+                <Facebook className="w-4 h-4" />
               </Link>
               <Link
-                href="https://www.instagram.com/icommission_/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-pink-600"
@@ -377,38 +416,22 @@ function Navbar() {
                 <Instagram className="w-4 h-4" />
               </Link>
               <Link
-                href="https://x.com/iCommission_"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-blue-400"
               >
                 <Twitter className="w-4 h-4" />
               </Link>
-              <Link
-                href="https://www.facebook.com/profile.php?id=61563112392385"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-blue-800"
-              >
-                <Facebook className="w-4 h-4" />
-              </Link>
-              <Link
-                href="https://www.youtube.com/channel/UC3NQSXJzHVqSXuSo3lH9idQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-red-600"
-              >
-                <Youtube className="w-4 h-4" />
-              </Link>
             </div>
           </div>
 
           <Link
-            href="#contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+            href="/"
+            className="block px-3 py-2 rounded-md text-base font-medium text-white bg-green-600 hover:bg-green-700"
             onClick={closeMenu}
           >
-            Apply Now
+            Book Now
           </Link>
         </div>
       </nav>

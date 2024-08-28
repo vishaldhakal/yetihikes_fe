@@ -6,14 +6,45 @@ function UnLockSection() {
       <section class="py-10 bg-white sm:py-16 lg:py-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div class="max-w-2xl mx-auto text-center sm:text-center">
-            <h2 class="text-3xl font-bold text-black sm:text-4xl lg:text-5xl">
-              Unlock Your Earnings with iCommission Advance.
+            <h2 class="text-3xl font-extrabold text-black sm:text-3xl lg:text-3xl mb-10">
+              Unlock Your Experience with Yeti Hikes
             </h2>
-            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600 mb-6">
-              Do you have a firm deal but are tired of waiting for your
-              commission payouts? With iCommission, you can access your
-              hard-earned money right away. Here’s why our iCommission Advance
-              service is the ideal choice for you.
+            <ul className="mt-6 space-x-10 text-lg text-gray-600 flex items-center">
+              <li className="flex text-xs flex-col items-center">
+                <span
+                  className="mr-2 text-2xl"
+                  role="img"
+                  aria-label="mountain"
+                >
+                  🏔️
+                </span>
+                Do you want to experience the beauty of the Himalayas?
+              </li>
+              <li className="flex text-xs flex-col items-center">
+                <span
+                  className="mr-2 text-2xl"
+                  role="img"
+                  aria-label="prayer wheels"
+                >
+                  🛕
+                </span>
+                Do you want to explore the culture and traditions of Nepal?
+              </li>
+              <li className="flex text-xs flex-col items-center">
+                <span
+                  className="mr-2 text-2xl"
+                  role="img"
+                  aria-label="person climbing"
+                >
+                  🧗
+                </span>
+                Do you want to challenge yourself and push your limits?
+              </li>
+            </ul>
+            <p className="mt-6 mb-10 text-xl font-extrabold text-black">
+              If yes, then <span className="text-2xl text-black">yeti</span>
+              <span className="text-2xl text-primary">hikes.</span> is the
+              perfect choice for you! 🏞️
             </p>
             <div className="flex justify-center">
               <Link
@@ -22,7 +53,7 @@ function UnLockSection() {
                 class="flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-700 hover:bg-blue-600 focus:bg-blue-600"
                 role="button"
               >
-                Apply Now
+                View Packages
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

@@ -73,9 +73,9 @@
   scroll-margin-top: 150px;
 }
 
-/* .bgm{
-  background-image: url('/bg.jpg');
-  background-size: cover;
+.bgg{
+  background-size: cover !important;
   background-position: center;
-  opacity: 0.1;
-} */
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('/everest.png');
+}

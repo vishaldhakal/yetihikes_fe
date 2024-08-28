@@ -3,32 +3,32 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Diana S.",
-    location: "US",
-    text: "iCommissions is super easy to work with. Fast and same day payment. Highly recommend. All brokerages should work with a company like them so their agents can have a peace of mind.",
-    experience: "August 07, 2024",
-    image: "/reviews/1.png",
+    name: "Sarah M.",
+    location: "USA",
+    text: "Yeti Hikes made my dream of trekking to Everest Base Camp a reality. Their guides were knowledgeable, patient, and always prioritized our safety. The views were breathtaking, and the cultural experiences along the way were unforgettable. I can't recommend Yeti Hikes enough!",
+    experience: "April 15, 2024",
+    image: "/reviews/1.jpeg",
   },
   {
-    name: "Meta Realty",
-    location: "CA",
-    text: "As the broker owner of Meta Realty, we're always committed to providing the best service to our 120 agents. iCommission has been great to work with. They provide quick commission advances at very competitive rates so our agents can access their commission faster allowing them to further grow their business.",
-    experience: "July 19, 2024",
-    image: "/reviews/2.png",
+    name: "Raj P.",
+    location: "India",
+    text: "As an experienced trekker, I was impressed by Yeti Hikes' professionalism and attention to detail. Our Annapurna Circuit trek was perfectly organized, from the pre-trip briefing to the post-trek celebration. The local insights provided by our guide added so much value to the journey.",
+    experience: "May 22, 2024",
+    image: "/reviews/4.avif",
   },
   {
-    name: "Shruti O.",
-    location: "CA",
-    text: "Icommission has helped me financially in today's market. I get the advance within 48 hours. The process is seemless and is handled efficiently by the brokerage. Chris and his team is very transparent and believes in open communication and feedback.",
-    experience: "June 15, 2024",
-    image: "/reviews/3.png",
+    name: "Emma L.",
+    location: "UK",
+    text: "Yeti Hikes went above and beyond during our Langtang Valley trek. When unexpected weather hit, they quickly adjusted our itinerary to ensure we still had an amazing experience. Their commitment to responsible tourism and supporting local communities really stood out to me.",
+    experience: "March 8, 2024",
+    image: "/reviews/3.webp",
   },
   {
-    name: "Tony S.",
-    location: "CA",
-    text: "They were able to provide me a commission advance within a couple of hours of requesting it. It was a quick and easy process and they're a lot cheaper than other commission advance services. I would use them again and refer them to anybody who asks.",
-    experience: "June 28, 2024",
-    image: "/reviews/4.png",
+    name: "Hiroshi T.",
+    location: "Japan",
+    text: "The Manaslu Circuit trek with Yeti Hikes was life-changing. Our guide's expertise in high-altitude trekking was crucial, and the tea house accommodations they arranged were comfortable and authentic. Yeti Hikes made this challenging trek accessible and enjoyable for our group.",
+    experience: "June 3, 2024",
+    image: "/reviews/2.jpg",
   },
 ];
 
@@ -39,7 +39,7 @@ const TestimonialCard = ({ testimonial }) => (
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="h-9 rounded-full"
+          className="h-9 rounded-full w-9 object-cover object-left-top"
         />
       </div>
       <div>

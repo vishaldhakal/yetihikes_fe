@@ -10,25 +10,24 @@ function Footer() {
               <div className="flex justify-center">
                 <img
                   className="w-auto h-24 text-center"
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="iCommission Logo"
                 />
               </div>
               <p className="text-base leading-relaxed text-gray-600 mt-7">
-                iCommission offers Realtors commission advances to cover
-                expenses and fuel business growth. Boost your real estate
-                revenue with predictable, controllable, and scalable funding.
+                Yetihikes is a travel agency that offers the best travel
+                experience to its customers. We offer affordable and
+                customizable tour packages to our customers.
               </p>
               <div className="mt-7">
                 <p>
-                  <strong>Email:</strong> info@iCommission.ca
+                  <strong>Email:</strong> info@yetihikes.com
                 </p>
                 <p>
-                  <strong>Phone:</strong> 647-674-5958
+                  <strong>Phone:</strong> +977 986‑1145476
                 </p>
                 <p>
-                  <strong>Address:</strong> 103 - 8 Prologis Blvd, Mississauga
-                  ON L5W 1N3
+                  <strong>Address:</strong> Thamel, Kathmandu, Nepal
                 </p>
               </div>
               <div>
@@ -37,23 +36,7 @@ function Footer() {
                     <Link
                       className="me-2"
                       target="_blank"
-                      href="https://x.com/iCommission_"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        className="bi bi-twitter-x"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                      </svg>
-                    </Link>
-                    <Link
-                      className="me-2"
-                      target="_blank"
-                      href="https://www.facebook.com/profile.php?id=61563112392385"
+                      href="https://www.facebook.com/profile.php?id=61561912073901&mibextid=ZbWKwL"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +52,7 @@ function Footer() {
                     <Link
                       className="me-2"
                       target="_blank"
-                      href="https://www.instagram.com/icommission_/"
+                      href="https://www.instagram.com/yeti_hikes?igsh=c2l1emZ3ZDByazA0"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +68,7 @@ function Footer() {
                     <Link
                       className="me-2"
                       target="_blank"
-                      href="https://www.linkedin.com/company/icommission/?viewAsMember=true"
+                      href="https://www.linkedin.com/company/yeti-hikes/"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -101,44 +84,30 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div
-                className="trustpilot-widget flex justify-start mt-4"
-                data-locale="en-US"
-                data-template-id="56278e9abfbbba0bdcd568bc"
-                data-businessunit-id="66981487a28d00325aacceea"
-                data-style-height="52px"
-                data-style-width="100%"
-              >
-                <a
-                  href="https://www.trustpilot.com/review/icommission.ca"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Trustpilot
-                </a>
-              </div>
             </div>
             <div className="col-span-6 lg:col-span-3">
               <p className="text-base text-center font-semibold text-gray-900">
-                Find commission advance services in your city
+                Best Travel Categories
               </p>
               <ul className="mt-6 space-y-5">
                 {[
-                  "Toronto",
-                  "Mississauga",
-                  "Calgary",
-                  "Edmonton",
-                  "Vancouver",
-                  "Winnipeg",
-                  "Regina",
-                  "Brampton",
+                  "Trekking",
+                  "Climbing",
+                  "Expedetion",
+                  "Tour",
+                  "Safari",
+                  "Rafting",
+                  "Paragliding",
+                  "Bungee Jumping",
+                  "Hiking",
+                  "Cycling",
                 ].map((city) => (
                   <li key={city}>
                     <Link
-                      href={`/commission-advance/${city.toLowerCase()}`}
+                      href={`/`}
                       className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                     >
-                      Commission Advance in {city}
+                      {city} in Nepal
                     </Link>
                   </li>
                 ))}
@@ -160,7 +129,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/how-it-works"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     How it Works
@@ -168,7 +137,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/how-it-works#faq"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     FAQ
@@ -176,7 +145,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/company#reviews"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     Reviews
@@ -184,7 +153,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/resources#partner"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     Affiliate Partners
@@ -192,7 +161,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/resources#blog"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     Blog
@@ -200,7 +169,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="/"
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600 justify-center"
                   >
                     Privacy Policy
@@ -214,7 +183,7 @@ function Footer() {
 
           <div className="sm:flex sm:items-center sm:justify-center">
             <p className="text-sm text-gray-600">
-              © Copyright 2024, All Rights Reserved by iCommission
+              © Copyright 2024, All Rights Reserved by yetihikes
             </p>
           </div>
         </div>
